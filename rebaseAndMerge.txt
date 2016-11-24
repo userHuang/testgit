@@ -1,0 +1,11 @@
+//git 合并分支
+
+git checkout test //test: 分支
+git rebase master -i // master: 要合并到的分支
+按shift键加分号键: (输入) %s/pick/f
+输入 i
+把第一个 f 替换成 r
+wq // 保存并退出
+git checkout master
+git merge test
+git push origin master
